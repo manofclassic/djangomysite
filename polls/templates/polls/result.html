@@ -1,0 +1,10 @@
+질문 : {{ question.question_text }}
+
+{{ question.choice_set.all() }}
+<!--보기1:  {{ question.choice_set.all[0] }}-->
+<!--보기2:  {{ question.choice_set.all[1] }}-->
+<!--보기3:  {{ question.choice_set.all[2] }}-->
+
+{% for choice in question.choice_set.all %}
+    {{ choice_text }} --> {{ choice.vote }} <br>
+{% endfor %}

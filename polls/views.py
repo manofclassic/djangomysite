@@ -22,10 +22,10 @@ def detail(request, id):
 def add_question(request):
     text = request.POST['text']
 
-    q = Question(
-        question_text = text,
-        pub_date-timezone.now()
-    q.save()
+    # q = Question(
+    #     question_text = text,
+    #     pub_date-timezone.now()
+    # q.save()
     return HttpResponse('입력완료')
 
 
